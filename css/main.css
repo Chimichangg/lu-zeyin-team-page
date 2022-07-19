@@ -1,0 +1,159 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+input, textarea {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.box-model {
+    margin: 1rem;
+    padding: 1rem;
+    background: #000;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.head, .main > *, .foot {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+}
+
+.one-item {
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-template-columns: 1fr;
+}
+
+.two-items {
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+.three-items {
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+.contact-override {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+    grid-column: 1 / span 4;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+/*------------  End Grid Items ------------*/
+
+.head {
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.184);
+}
+
+.nav {
+    grid-column: 2 / span 3;
+    margin: 0;
+    height: 12vh;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+nav ul li a {
+    color: #626262;
+    font-size: inherit;
+}
+
+nav ul li a h4 {
+    display: inline;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 1em;
+    transition: background-color 500ms linear;
+}
+
+nav ul li a img {
+    width: 4vw;
+    position: relative;
+    top: 2.5vh;
+}
+
+.heading {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 15vh;
+}
+
+.team-card img{
+    width: 15vw;
+    padding: 2vw;
+}
+
+.team-card {
+    background-color:rgba(231, 231, 231, 0.100);
+
+}
+
+.detail img {
+    width: 15vw;
+    justify-self: center;
+}
+
+.detail p {
+    text-align: left;
+}
+
+.detail {
+    background-color:rgba(231, 231, 231, 0.100);
+    padding: 5vh 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
