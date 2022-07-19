@@ -38,6 +38,10 @@ input, textarea {
     float: right;
 }
 
+.margin-top {
+    margin-top: 12vh;
+}
+
 .head, .main > *, .foot {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
@@ -78,6 +82,11 @@ input, textarea {
 /*------------  End Grid Items ------------*/
 
 .head {
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.184);
+}
+
+.foot {
+    margin-top: 18vh;
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.184);
 }
 
@@ -122,27 +131,19 @@ nav ul li a img {
     text-align: center;
 }
 
-.margin-top {
-    margin-top: 15vh;
-}
-
 .team-card img{
-    width: 15vw;
-    padding: 2vw;
+    width: 100%;
 }
 
 .team-card {
     background-color:rgba(231, 231, 231, 0.100);
+    padding: 2vw;
 
 }
 
 .detail img {
-    width: 15vw;
+    width: 70%;
     justify-self: center;
-}
-
-.detail p {
-    text-align: left;
 }
 
 .detail {
@@ -154,6 +155,14 @@ nav ul li a img {
     display: none;
 }
 
+#detail-text {
+    grid-column: 2 / span 2;
+    align-self: center;
+    text-align: left;
+    padding-right: 7vw;
+}
 
-
+#detail-text span {
+    font-weight: 800;
+}
 
