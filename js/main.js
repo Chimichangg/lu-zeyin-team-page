@@ -12,34 +12,32 @@
         [`Dulf Pontos`,`Dulf attributes his success in multiple performance-based industries on the belief that he was committed to providing significantly more value to his employers and customers than anyone else in the field`],
 
 
-        [`Gabi Chimwala`,`Gabi has more than 7 years of experience in digital marketing particularly SEO and PPC. He had worked with different agencies and businesses in Australia, Europe and US. He is the person behind Client Care, our customer support system, making sure that every problems faced by the clients are being addressed and troubleshooted. His experience also equipped his in supporting the team whenever needed.`]
+        [`Zeyin Lu`,`Zeyin is the new intern to the company and mostly responsible for all the tasks that are given by people in the company. He is proficient in getting coffee, getting lunch, and cleaning the break room. He will occasionally receive some design or coding tasks from his superior, but he is still learning how to manage them.`]
     ]
 
-    function showData() {
-        detailHd.textContent = memberData[this.dataset.offset][0];
-        detailP.textContent = memberData[this.dataset.offset][1];
-        detailPic.src = `images/member${this.dataset.offset}.jpg`;
+    function showData(el) {
+        detailHd.textContent = memberData[el.dataset.offset][0];
+        detailP.textContent = memberData[el.dataset.offset][1];
+        detailPic.src = `images/member${el.dataset.offset}.jpg`;
     }
 
-    function showCard() {
-        detailCard.classList.toggle('hidden');
-    }
+    function showHideCard(event) {
+        if (event.target.parentNode.classList.contains('team-card')) { 
+            detailCard.classList.remove('hidden');
+ 
+            showData(event.target.parentNode)
+         } else {
+             detailCard.classList.add('hidden');
+         }
+ 
+        
+     }
 
 
 
 
 
-
-
-
-    teamCard.forEach(card => card.addEventListener('click',showData));
-    teamCard.forEach(card => card.addEventListener('click',showCard));
-
-
-
-
-
-
+     document.body.addEventListener('click', showHideCard);
 
 
 
